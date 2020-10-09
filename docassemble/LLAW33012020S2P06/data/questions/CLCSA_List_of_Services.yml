@@ -49,15 +49,67 @@ data:
 variable name: CLCSAservicesSpecial
 use objects: True
 data:
-  - name: 
+   - name: "Environmental Defenders Office"
+    location:
+     - North
+     - South
+     - West
+     - East
+     - Central
+    legal issue: 
+     - Environmental
+    gender: 
+    - Male
+    - Female
+    - Other
+    indigenous:
+    - Yes
+    - No
+    - Do not wish to say
+  -  name: "Homelessness Legal Service"
+    location:
+     - Central
     legal issue:
+     - Homelessness
+    gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - Yes
+     - No
+     - Do not wish to say
+   -  name: "Refugee Advocacy Service of South Australia"
+     location: 
+     - North
+     - South
+     - East
+     - West
+     - Central
+     legal issue: 
+     - Migration
+     indigenous: 
+     - No
+     - Do not wish to say
+    - name: "Community/Neighbourhood Mediatiation
+     location: 
+     - North
+     - East
+     - South 
+     - West
+     - Central
+     legal issue: 
+     - Mediation
+     indigenous:
+     - No
+     - Do not wish to say     
 ###### and this #######
 ---
 # Table with gender specific services list
 variable name: CLCSAservicesGender
 use objects: True
 data:
-  - name: "Women's Legal Services"
+  -  name: "Women's Legal Services"
     gender:
       - Female
       - Do not wish to say
@@ -66,9 +118,28 @@ data:
 variable name: CLCSAservicesIndigenous
 use objects: True
 data:
-  - name: 
+   - name: "Family Violence Legal Service Aboriginal Corporation (SA)"
+    location: 
+     - North
+     - South
+     - East
+     - West
+     - Central
+    legal issue: Domestic violence 
     indigenous:
-      - Yes
-      - Do not wish to say
+     - Yes
+     - Do not wish to say
+   -  name:  "Consumer Credit Law Centre South Australia"
+     location:
+     - North
+     - South
+     - East
+     - West
+     - Central
+     legal issue: Financial
+     indigenous:
+     - Yes
+     - No
+     - Do not wish to say
 ###### and this ########
 ---
