@@ -1,0 +1,21 @@
+---
+include:
+  - CLCSA_Questions.yml
+  - CLCSA_List_of_Services.yml
+  - CLCSA_Welcome_And_End_Screen.yml
+---
+code: |
+  # Gender criteria question table
+  CLCSA_display_data = []
+  if CLCSAgender == True:
+    CLCSA_display_data.append(CLCSAservicesGender) 
+---
+# Gender Table Block
+table: CLCSA_display_table
+rows: CLCSA_display_data
+columns:
+  - Name of Service: |
+      row_item['name']
+  - Contact Information: |
+      row_item['website']
+---
