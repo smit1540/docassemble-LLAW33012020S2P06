@@ -88,6 +88,10 @@ data:
      - Central
      legal issue: 
      - Migration
+     gender:
+     - Male
+     - Female
+     - Other
      indigenous: 
      - No
      - Do not wish to say
@@ -100,19 +104,101 @@ data:
      - Central
      legal issue: 
      - Mediation
+     gender:
+     - Male
+     - Female
+     - Other
      indigenous:
      - No
-     - Do not wish to say     
+     - Do not wish to say  
+    - name: "JusticeNetSA"
+     location:
+     - North
+     - East
+     - South
+     - West
+     - Central
+     legal issue: 
+     - Financial
+     - Migration
+     - Mediation
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous: 
+     - No
+     - Yes
+     - Do not wish to say
+    - name: "Social Security Legal Advice Service"
+     location:
+     - North
+     - South
+     - East
+     - West
+     - Central
+     legal issue:
+     - Centrelink
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - No
+     - Yes
+     - Do not wish to say
+    - name: "Roma Mitchell Human Rights Volunteer Service"
+    location: 
+     - Central
+     legal issue:
+     - # i'm not sure what to put here?
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - No 
+     - Yes
+     - Do not wish to say
+    - name: Elder Abuse Unit
+     location:
+     - Central
+     legal issue: Elder Abuse
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - No
+     - Yes
+     - Do not wish to say
+ 
 ###### and this #######
 ---
 # Table with gender specific services list
 variable name: CLCSAservicesGender
 use objects: True
 data:
-  -  name: "Women's Legal Services"
+  - name: "Women's Legal Services"
+   location: 
+    - North
+    - South
+    - East
+    - West
+    - Central
+   gender:
+    - Female
+    - Do not wish to say
+   indigenous: 
+    - No
+    - Yes
+    - Do not wish to say
+  - name: "Inspiring Determination Independence Growth and Opportunities (INDIGO)
+   location: 
+    - South
     gender:
-      - Female
-      - Do not wish to say
+    - Female
+    - Do not wish to say
 ---
 # Table with indigenous specific services list
 variable name: CLCSAservicesIndigenous
