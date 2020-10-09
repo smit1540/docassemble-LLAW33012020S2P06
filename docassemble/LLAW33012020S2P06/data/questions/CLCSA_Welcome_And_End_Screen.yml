@@ -30,7 +30,8 @@ question: |
   Aboriginal or Torres Strait Islander| ${ CLCSAindigenous }
   
   Here are the list of services,
-  INSERT DISPLAY TABLE MARKDOWN FOR LIST
+  
+  ${ CLCSA_display_table }
   
 buttons:
   - exit: Exit
