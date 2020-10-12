@@ -6,6 +6,10 @@ data:
   - name: Northern Community Legal Service
     location:
       - North
+    phone: 
+      - 82866911
+    address:
+      - 26 John Street Salisbury
     legal issue:
       - Other
     gender:
@@ -20,6 +24,10 @@ data:
       - West
       - North
       - Outback
+    phone:
+      - 83409009
+    address: 
+      - 212 Port Road Hindmarsh SA 5007
     legal issue:
       - Other
     gender:
@@ -34,6 +42,10 @@ data:
       - West
       - North
       - Outback
+    phone: 
+      - 86333600
+    address:
+      - Flinders Arcade 72 Ellen Street Port Pirie SA 5540
     legal issue:
       - Other
     gender:
@@ -56,6 +68,8 @@ data:
      - West
      - East
      - Central
+    phone: 
+    - 
     legal issue: 
      - Environmental
     gender: 
@@ -95,7 +109,7 @@ data:
      indigenous: 
      - No
      - Do not wish to say
-    - name: "Community/Neighbourhood Mediatiation
+    - name: "Community/Neighbourhood Mediatiation"
      location: 
      - North
      - East
@@ -160,7 +174,7 @@ data:
      - No 
      - Yes
      - Do not wish to say
-    - name: Elder Abuse Unit
+    - name: "Elder Abuse Unit"
      location:
      - Central
      legal issue: Elder Abuse
