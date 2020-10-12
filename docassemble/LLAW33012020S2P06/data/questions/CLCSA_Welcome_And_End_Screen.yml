@@ -25,7 +25,7 @@ question: |
   
   Questions                           |Answers
   ------------------------------------|--------
-  Location                            | ${ CLCSAlocation }
+  Location                            | ${ CLCSAlocation.true_values() }
   Legal Issue                         | ${ CLCSAlegalissue.true_values() }
   Gender                              | ${ CLCSAgender }
   Aboriginal or Torres Strait Islander| ${ CLCSAindigenous }
