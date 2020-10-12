@@ -1,7 +1,8 @@
 ---
 include:
   - CLCSA_Questions.yml
-  - CLCSA_Code.yml
+  - CLCSA_Gender_Code.yml
+  - CLCSA_Indigenous_Code.yml
   - CLCSA_List_of_Services.yml
 ---
 # Welcome screen
@@ -25,15 +26,29 @@ question: |
   
   Questions                           |Answers
   ------------------------------------|--------
-  Location                            | ${ CLCSAlocation.true_values() }
-  Legal Issue                         | ${ CLCSAlegalissue.true_values() }
-  Gender                              | ${ CLCSAgender }
-  Aboriginal or Torres Strait Islander| ${ CLCSAindigenous }
+  Location                            | ${CLCSAlocation.true_values()}
+  Legal Issue                         | ${CLCSAlegalissue.true_values()}
+  Gender                              | ${CLCSAgender}
+  Aboriginal or Torres Strait Islander| ${CLCSAindigenous}
   
   Here are the list of services,
   
-  ${ CLCSA_display_table }
+  %if CLCSAgender:
+    ${CLCSA3column_header}
+    ${CLCSA3dashes}
+    %for CLCSA3item in CLCSA3table_rows:
+    ${CLCSA3item}
+    %endfor
+  %endif
   
+  %if CLCSAindigenous:
+    ${CLCSA4column_header}
+    ${CLCSA4dashes}
+    %for CLCSA4item in CLCSA4table_rows:
+    ${CLCSA4item}
+    %endfor
+  %endif
+    
 buttons:
   - exit: Exit
   - restart: Restart

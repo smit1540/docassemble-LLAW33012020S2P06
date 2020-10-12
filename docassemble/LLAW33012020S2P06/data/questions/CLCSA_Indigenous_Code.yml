@@ -1,0 +1,33 @@
+---
+include:
+  - CLCSA_Questions.yml
+  - CLCSA_List_of_Services.yml
+  - CLCSA_Welcome_And_End_Screen.yml
+---
+# Gender criteria question table 
+code: |
+  # Column Header
+  CLCSA4column_header = ""
+  
+  for CLCSA4item in CLCSAservicesIndigenous[0]:
+    CLCSA4column_header += CLCSA4item + '|'
+  
+  CLCSA4column_header = CLCSA4column_header[:-1]
+---
+code: |
+  # Table Dashes
+  CLCSA4dashes = '---'
+  for i in range(len(CLCSAservicesIndigenous[0]) - 1):
+    CLCSA4dashes += '|---'
+---
+code: |
+  # List construction
+  CLCSA4table_rows = []
+  for CLCSA4item in CLCSAservicesIndigenous:
+    CLC4row = ""
+    for CLCSA4key in CLCSA4item:
+      CLC4row += str(CLCSA4item[CLCSA4key]) + '|'
+      
+    CLC4row = CLC4row[:-1]
+    CLCSA4table_rows.append(CLC4row)
+---
