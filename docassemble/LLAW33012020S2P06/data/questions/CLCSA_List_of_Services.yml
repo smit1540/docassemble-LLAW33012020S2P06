@@ -1,0 +1,74 @@
+---
+# Table with general services list
+variable name: CLCSAservicesGeneral
+use objects: True
+data:
+  - name: Northern Community Legal Service
+    location:
+      - North
+    legal issue:
+      - Other
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous:
+      - No
+      - Do not wish to say
+  - name: WestSide Lawyers Hindmarsh
+    location:
+      - West
+      - North
+      - Outback
+    legal issue:
+      - Other
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous:
+      - No
+      - Do not wish to say
+  - name: WestSide Lawyers Port Pirie
+    location:
+      - West
+      - North
+      - Outback
+    legal issue:
+      - Other
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous:
+      - No
+      - Do not wish to say
+###### Someone please finish this ########
+---
+# Table with specialist services list
+variable name: CLCSAservicesSpecial
+use objects: True
+data:
+  - name: 
+    legal issue:
+###### and this #######
+---
+# Table with gender specific services list
+variable name: CLCSAservicesGender
+use objects: True
+data:
+  - name: "Women's Legal Services"
+    gender:
+      - Female
+      - Do not wish to say
+---
+# Table with indigenous specific services list
+variable name: CLCSAservicesIndigenous
+use objects: True
+data:
+  - name: 
+    indigenous:
+      - Yes
+      - Do not wish to say
+###### and this ########
+---

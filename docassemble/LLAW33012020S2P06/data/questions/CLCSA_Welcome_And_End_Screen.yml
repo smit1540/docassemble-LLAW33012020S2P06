@@ -1,0 +1,39 @@
+---
+include:
+  - CLCSA_Questions.yml
+  - CLCSA_List_of_Services.yml
+---
+# Welcome screen
+mandatory: true
+question: |
+  #### Welcome to the Community Legal Centre South Australia application. 
+  #### This application will help find a legal centre for you.
+  
+  
+  #### Privacy Statement: something something....
+  
+buttons:  
+  - I agree: continue
+  - I do not agree: exit
+    url: https://www.clcsa.org.au/
+---
+# Final Screen
+mandatory: true
+question: |
+  Thank you for completing this application. Here are your responses,
+  
+  Questions                           |Answers
+  ------------------------------------|--------
+  Location                            | ${ CLCSAlocation }
+  Legal Issue                         | ${ CLCSAlegalissue.true_values() }
+  Gender                              | ${ CLCSAgender }
+  Aboriginal or Torres Strait Islander| ${ CLCSAindigenous }
+  
+  Here are the list of services,
+  
+  ${ CLCSA_display_table }
+  
+buttons:
+  - exit: Exit
+  - restart: Restart
+---
