@@ -6,6 +6,10 @@ data:
   - name: Northern Community Legal Service
     location:
       - North
+    phone: 
+      - 82866911
+    address:
+      - 26 John Street Salisbury
     legal issue:
       - Other
     gender:
@@ -20,6 +24,10 @@ data:
       - West
       - North
       - Outback
+    phone:
+      - 83409009
+    address: 
+      - 212 Port Road Hindmarsh SA 5007
     legal issue:
       - Other
     gender:
@@ -34,6 +42,10 @@ data:
       - West
       - North
       - Outback
+    phone: 
+      - 86333600
+    address:
+      - Flinders Arcade 72 Ellen Street Port Pirie SA 5540
     legal issue:
       - Other
     gender:
@@ -43,14 +55,138 @@ data:
     indigenous:
       - No
       - Do not wish to say
-###### Someone please finish this ########
+###### I think we only need to add in the phone number and address now ########
 ---
 # Table with specialist services list
 variable name: CLCSAservicesSpecial
 use objects: True
 data:
-  - name: 
+   - name: "Environmental Defenders Office"
+    location:
+     - North
+     - South
+     - West
+     - East
+     - Central
+    phone: 
+    - 
+    legal issue: 
+     - Environmental
+    gender: 
+    - Male
+    - Female
+    - Other
+    indigenous:
+    - Yes
+    - No
+    - Do not wish to say
+  -  name: "Homelessness Legal Service"
+    location:
+     - Central
     legal issue:
+     - Homelessness
+    gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - Yes
+     - No
+     - Do not wish to say
+   -  name: "Refugee Advocacy Service of South Australia"
+     location: 
+     - North
+     - South
+     - East
+     - West
+     - Central
+     legal issue: 
+     - Migration
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous: 
+     - No
+     - Do not wish to say
+    - name: "Community/Neighbourhood Mediatiation"
+     location: 
+     - North
+     - East
+     - South 
+     - West
+     - Central
+     legal issue: 
+     - Mediation
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - No
+     - Do not wish to say  
+    - name: "JusticeNetSA"
+     location:
+     - North
+     - East
+     - South
+     - West
+     - Central
+     legal issue: 
+     - Financial
+     - Migration
+     - Mediation
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous: 
+     - No
+     - Yes
+     - Do not wish to say
+    - name: "Social Security Legal Advice Service"
+     location:
+     - North
+     - South
+     - East
+     - West
+     - Central
+     legal issue:
+     - Centrelink
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - No
+     - Yes
+     - Do not wish to say
+    - name: "Roma Mitchell Human Rights Volunteer Service"
+    location: 
+     - Central
+     legal issue:
+     - # i'm not sure what to put here?
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - No 
+     - Yes
+     - Do not wish to say
+    - name: "Elder Abuse Unit"
+     location:
+     - Central
+     legal issue: Elder Abuse
+     gender:
+     - Male
+     - Female
+     - Other
+     indigenous:
+     - No
+     - Yes
+     - Do not wish to say
+ 
 ###### and this #######
 ---
 # Table with gender specific services list
@@ -58,17 +194,52 @@ variable name: CLCSAservicesGender
 use objects: True
 data:
   - name: "Women's Legal Services"
+   location: 
+    - North
+    - South
+    - East
+    - West
+    - Central
+   gender:
+    - Female
+    - Do not wish to say
+   indigenous: 
+    - No
+    - Yes
+    - Do not wish to say
+  - name: "Inspiring Determination Independence Growth and Opportunities (INDIGO)
+   location: 
+    - South
     gender:
-      - Female
-      - Do not wish to say
+    - Female
+    - Do not wish to say
 ---
 # Table with indigenous specific services list
 variable name: CLCSAservicesIndigenous
 use objects: True
 data:
-  - name: 
+   - name: "Family Violence Legal Service Aboriginal Corporation (SA)"
+    location: 
+     - North
+     - South
+     - East
+     - West
+     - Central
+    legal issue: Domestic violence 
     indigenous:
-      - Yes
-      - Do not wish to say
+     - Yes
+     - Do not wish to say
+   -  name:  "Consumer Credit Law Centre South Australia"
+     location:
+     - North
+     - South
+     - East
+     - West
+     - Central
+     legal issue: Financial
+     indigenous:
+     - Yes
+     - No
+     - Do not wish to say
 ###### and this ########
 ---
