@@ -7,7 +7,7 @@ include:
 code: |
   # Gender criteria question table
   CLCSA_display_data = []
-  if CLCSAgender == True:
+  if CLCSAgender == False:
     CLCSA_display_data.append(CLCSAservicesGender) 
 ---
 # Gender Table Block
@@ -16,6 +16,8 @@ rows: CLCSA_display_data
 columns:
   - Name of Service: |
       row_item['name']
-  - Contact Information: |
-      row_item['website']
+  - Phone Number: |
+      row_item['phone']
+  - Address: |
+      row_item['address']
 ---
