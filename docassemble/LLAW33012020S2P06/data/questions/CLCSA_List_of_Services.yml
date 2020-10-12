@@ -1,5 +1,5 @@
 ---
-# Table with general services list
+# Dictionary containing information regarding the General Services provided by CLCSA #
 variable name: CLCSAservicesGeneral
 use objects: True
 data:
@@ -7,9 +7,9 @@ data:
     location:
       - North
     phone: 
-      - 82866911
+      - 8286 6911
     address:
-      - 26 John Street Salisbury
+      - 26 John Street Salisbury SA
     legal issue:
       - Other
     gender:
@@ -25,7 +25,7 @@ data:
       - North
       - Outback
     phone:
-      - 83409009
+      - 8340 9009
     address: 
       - 212 Port Road Hindmarsh SA 5007
     legal issue:
@@ -43,7 +43,7 @@ data:
       - North
       - Outback
     phone: 
-      - 86333600
+      - 8633 3600
     address:
       - Flinders Arcade 72 Ellen Street Port Pirie SA 5540
     legal issue:
@@ -55,139 +55,215 @@ data:
     indigenous:
       - No
       - Do not wish to say
-###### I think we only need to add in the phone number and address now ########
+   - name: Uniting Communities Law Centre
+     location: 
+       - Central
+       - Hills 
+     phone:
+       - 1800 615 677
+     address:
+       - 43 Franklin Street Adelaide SA 5000
+     legal issue: 
+       - Other
+   - name: Southern Community Justice Centre
+     location: 
+       - South
+     phone: 
+       - 8384 5222
+     address: 
+       - 40 Beach Road Chrisies Beach SA 5165
+     legal issue:
+       - Other
+     gender:
+       - Male
+       - Female
+       - Other
+     indigenous:
+       - No
+       - Yes
+       - Do not wish to say
+   - name: Limestone Coast Community Justice Centre
+     location: 
+       - South
+     phone: 
+       - 8723 1396
+     address:
+       - 8a Commercial Street West Mount Gambier SA 5290
+     legal issue:
+       - Other
+     indigenous:
+       - No 
+       - Yes
+       - Do not wish to say
+   - name: Riverland Commuity Justice Centre
+     location: 
+       - Riverland
+     phone: 
+       - 8582 4998 
+     address: 
+       - 9 Kay Avenue Berri SA 5343
+     legal issue:
+       -  Other
+     gender:
+       - Male
+       - Female
+       - Other
+     indigenous:
+       - No
+       - Yes
+       - Do not wish to say
+  - name: "Roma Mitchell Human Rights Volunteer Service"
+    location: 
+       - Central
+     legal issue:
+       - Other
+     gender:
+       - Male
+       - Female
+       - Other
+     indigenous:
+       - No 
+       - Yes
+       - Do not wish to say
 ---
-# Table with specialist services list
-variable name: CLCSAservicesSpecial
+### Dictionary containing information regarding the Specialist Services provided by CLCSA ###
+# most of the specialist services are statewide so i'm not sure what to put under location ##
+variable name: CLCSAservicesSpecial 
 use objects: True
 data:
-   - name: "Environmental Defenders Office"
-    location:
-     - North
-     - South
-     - West
-     - East
-     - Central
-    phone: 
-    - 
-    legal issue: 
-     - Environmental
-    gender: 
-    - Male
-    - Female
-    - Other
-    indigenous:
-    - Yes
-    - No
-    - Do not wish to say
-  -  name: "Homelessness Legal Service"
-    location:
-     - Central
-    legal issue:
-     - Homelessness
-    gender:
-     - Male
-     - Female
-     - Other
-     indigenous:
-     - Yes
-     - No
-     - Do not wish to say
-   -  name: "Refugee Advocacy Service of South Australia"
-     location: 
-     - North
-     - South
-     - East
-     - West
-     - Central
-     legal issue: 
-     - Migration
-     gender:
-     - Male
-     - Female
-     - Other
-     indigenous: 
-     - No
-     - Do not wish to say
-    - name: "Community/Neighbourhood Mediatiation"
-     location: 
-     - North
-     - East
-     - South 
-     - West
-     - Central
-     legal issue: 
-     - Mediation
-     gender:
-     - Male
-     - Female
-     - Other
-     indigenous:
-     - No
-     - Do not wish to say  
-    - name: "JusticeNetSA"
-     location:
-     - North
-     - East
-     - South
-     - West
-     - Central
-     legal issue: 
-     - Financial
-     - Migration
-     - Mediation
-     gender:
-     - Male
-     - Female
-     - Other
-     indigenous: 
-     - No
-     - Yes
-     - Do not wish to say
-    - name: "Social Security Legal Advice Service"
-     location:
-     - North
-     - South
-     - East
-     - West
-     - Central
-     legal issue:
-     - Centrelink
-     gender:
-     - Male
-     - Female
-     - Other
-     indigenous:
-     - No
-     - Yes
-     - Do not wish to say
-    - name: "Roma Mitchell Human Rights Volunteer Service"
+  - name: "Environmental Defenders Office"
     location: 
-     - Central
-     legal issue:
-     - # i'm not sure what to put here?
+      - North
+      - South
+      - West
+      - East
+      - Central
+    phone: 
+      - Freecall 1800 337 566 or Telephone 8359 2222
+    address:
+      - Flinders University City Campus, Level 1, 182 Victoria Square, Adelaide SA 5000
+    legal issue: 
+      - Environmental
+    gender: 
+      - Male
+      - Female
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: "Homelessness Legal Service"
+    location:
+      - Central
+    phone: 
+      - 8232 2282 (Catherine House) outreach times by appointment
+    address: Hutt Street Centre, 258 Hutt Street, Adelaide SA 5000 (Outreach times: 10am-12pm Monday)
+    legal issue:
+      - Homelessness
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous:
+       - Yes
+       - No
+       - Do not wish to say
+  -  name: "Refugee Advocacy Service of South Australia"
+     location: 
+       - North
+       - South
+       - East
+       - West
+       - Central
+     phone: 
+       - 0401 247 224 Arvin Chang (Project Coordinator and Registered Migration Agent)
+     address: 
+       - Flinders University Building, 182 Victoria Square, Adelaide SA 5000 (by appointment only)
+     legal issue: 
+       - Migration
      gender:
-     - Male
-     - Female
-     - Other
+       - Male
+       - Female
+       - Other
+     indigenous: 
+       - No
+       - Do not wish to say
+    - name: "Community/Neighbourhood Mediatiation"
+      phone: 
+      - 8342 1800
+      address: # THIS WAS CONFUSING AS THERE WERE MULTIPLE ADDRESSES #
+      location: 
+        - North
+        - East
+        - South 
+        - West
+        - Central
+     legal issue: 
+       - Mediation
+     gender:
+       - Male
+       - Female
+       - Other
      indigenous:
-     - No 
-     - Yes
-     - Do not wish to say
-    - name: "Elder Abuse Unit"
+       - No
+       - Do not wish to say  
+   - name: "JusticeNetSA" # I WASN'T USURE WHAT CONTACT DETAILS TO PUT HERE! #
      location:
-     - Central
-     legal issue: Elder Abuse
+       - North
+       - East
+       - South
+       - West
+       - Central
+     legal issue: 
+       - Financial
+       - Migration
+       - Mediation
      gender:
-     - Male
-     - Female
-     - Other
+       - Male
+       - Female
+       - Other
+     indigenous: 
+       - No
+       - Yes
+       - Do not wish to say
+   - name: "Social Security Legal Advice Service"
+     location:
+       - North
+       - South
+       - East
+       - West
+       - Central
+     phone: 
+       - 8342 1800
+     address:
+       - 43 Franklin Street, Adelaide SA 5000
+     legal issue:
+       - Centrelink
+     gender:
+       - Male
+       - Female
+       - Other
      indigenous:
-     - No
-     - Yes
-     - Do not wish to say
- 
-###### and this #######
+       - No
+       - Yes
+       - Do not wish to say
+   - name: "Elder Abuse Unit"
+     location:
+       - Central
+     phone: 
+       - 8342 1800
+     address: 
+       - 43 Franklin Street, Adelaide SA 5000
+     legal issue: 
+       - Elder Abuse
+     gender:
+       - Male
+       - Female
+       - Other
+     indigenous:
+       - No
+       - Yes
+       - Do not wish to say
 ---
 # Table with gender specific services list
 variable name: CLCSAservicesGender
@@ -195,24 +271,31 @@ use objects: True
 data:
   - name: "Women's Legal Services"
    location: 
-    - North
-    - South
-    - East
-    - West
-    - Central
+      - North
+      - South
+      - East
+      - West
+      - Central
+   phone: 
+     - 8340 9009
+   address:
+     - 45 Grenfell Street, Adelaide SA 5000
    gender:
-    - Female
-    - Do not wish to say
+      - Female
+      - Do not wish to say
    indigenous: 
-    - No
-    - Yes
-    - Do not wish to say
+      - No
+      - Yes
+      - Do not wish to say
   - name: "Inspiring Determination Independence Growth and Opportunities (INDIGO)
    location: 
-    - South
+      - South
+    phone: 
+      - 8340 9009
+    address: # this is a program and so there is no address per se #
     gender:
-    - Female
-    - Do not wish to say
+      - Female
+      - Do not wish to say
 ---
 # Table with indigenous specific services list
 variable name: CLCSAservicesIndigenous
@@ -220,26 +303,36 @@ use objects: True
 data:
    - name: "Family Violence Legal Service Aboriginal Corporation (SA)"
     location: 
-     - North
-     - South
-     - East
-     - West
-     - Central
+       - South
+       - Outback
+    phone: 
+      - See Office Adresss for Contact Details
+    address:
+      - Port Augusta Office, 26 Jervois Street Port Augusta SA 5700, Freecall 1800 111 052 or Telephone 8641 2195
+      - Port Lincoln Office, 56 St Andrews Terrace Port Lincoln SA 5606, Freecall 1800 309 912 or Telephone 8683 1896
+      - Ceduna Office, 17 McKenzie Street Ceduna SA 5700, Freecall 1800 839 059 or Telephone 8625 3800
     legal issue: Domestic violence 
     indigenous:
-     - Yes
-     - Do not wish to say
+       - Yes
+       - Do not wish to say
    -  name:  "Consumer Credit Law Centre South Australia"
      location:
-     - North
-     - South
-     - East
-     - West
-     - Central
-     legal issue: Financial
+       - North
+       - South
+       - East
+       - West
+       - Central
+     phone: 
+       - 8342 1800 or 1300 886 220 for country callers
+     address:
+       - Adelaide Office, 10 Pitt Street, Adelaide SA 5000
+       - Medindie Gardens, Unit 2 59 Main North Road, Medindie Gardens SA 5081
+       - Smithfield, Unit 2, 2B Morialta Drive, Smithfield SA 5114
+       - Christies Beach, Unit 3, 107 Dyson Road, Christies Beach SA 5165
+     legal issue: 
+       - Financial
      indigenous:
-     - Yes
-     - No
-     - Do not wish to say
-###### and this ########
+       - Yes
+       - No
+       - Do not wish to say
 ---
