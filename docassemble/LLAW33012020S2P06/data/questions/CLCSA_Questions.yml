@@ -29,9 +29,9 @@ fields:
       - Domestic violence: Domestic violence
       - Elder Abuse: Elder Abuse
       - Environmental: Environmental
-      - Financial (debt, bankrupcy, mortgage): Financial
-      - Migration (Visa applications): Migration
-      - Mediation (conflict, disputes): Mediation
+      - Financial (personal debt, bankrupcy, mortgage): Financial
+      - Migration (refugee visa applications): Migration
+      - Mediation (neighbourhood conflicts, disputes): Mediation
       - Other: Other
 ---
 question: What is your gender?
