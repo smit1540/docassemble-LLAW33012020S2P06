@@ -11,8 +11,12 @@ question: |
   #### Welcome to the Community Legal Centre South Australia application. 
   #### This application will help find a legal centre for you.
   
-  
-  #### Privacy Statement: something something....
+       ## PRIVACY STATEMENT ##
+  #### Community Legal Centres South Australia is committed to protecting the privacy of 
+  #### and accuracy of confidential information to the extent possible, subject to the provisions of State and Federal law. 
+       ## APP SHOULD NOT BE USED INSTEAD OF PROFESSIONAL LEGAL ADVICE ##
+  ###  This application can be used to help find a Community Legal Centre and should be not be used as a replacement for 
+  #### professional legal advice.
   
 buttons:  
   - I agree: continue
