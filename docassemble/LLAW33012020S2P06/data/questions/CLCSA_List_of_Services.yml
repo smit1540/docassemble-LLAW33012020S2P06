@@ -1,6 +1,6 @@
 ---
 # Dictionary containing information regarding the General Services provided by CLCSA #
-variable name: CLCSAservicesGeneral
+variable name: CLCSA_Services
 use objects: True
 data:
   - name: Northern Community Legal Service
@@ -25,7 +25,7 @@ data:
       - North
       - Outback
     phone:
-      - 8340 9009
+      - 08 8346 9009
     address: 
       - 212 Port Road Hindmarsh SA 5007
     legal issue:
@@ -43,7 +43,7 @@ data:
       - North
       - Outback
     phone: 
-      - 8633 3600
+      - 08 8633 3600
     address:
       - Flinders Arcade 72 Ellen Street Port Pirie SA 5540
     legal issue:
@@ -69,7 +69,7 @@ data:
     location: 
       - South
     phone: 
-      - 8384 5222
+      - 08 8384 5222
     address: 
       - 40 Beach Road Chrisies Beach SA 5165
     legal issue:
@@ -86,7 +86,7 @@ data:
     location: 
       - South
     phone: 
-      - 8723 1396
+      - 08 8723 1396
     address:
       - 8a Commercial Street West Mount Gambier SA 5290
     legal issue:
@@ -99,7 +99,7 @@ data:
     location: 
       - Riverland
     phone: 
-      - 8582 4998 
+      - 08 8582 4998 
     address: 
       - 9 Kay Avenue Berri SA 5343
     legal issue:
@@ -112,7 +112,7 @@ data:
       - No
       - Yes
       - Do not wish to say
-  - name: "Roma Mitchell Human Rights Volunteer Service"
+  - name: Roma Mitchell Human Rights Volunteer Service
     location: 
       - Central
     phone:
@@ -129,11 +129,6 @@ data:
       - No 
       - Yes
       - Do not wish to say
----
-# Dictionary containing information regarding the Specialist Services provided by CLCSA - most of the specialist services are statewide so i'm not sure what to put under location #
-variable name: CLCSAservicesSpecial 
-use objects: True
-data:
   - name: Environmental Defenders Office
     location: 
       - North
@@ -219,7 +214,7 @@ data:
       - West
       - Central
     phone:
-      - TBA
+      - 08 8313 5005
     address:
       - TBA
     legal issue: 
@@ -259,7 +254,7 @@ data:
     location:
       - Central
     phone: 
-      - 8342 1800
+      - 03 8342 1800
     address: 
       - 43 Franklin Street, Adelaide SA 5000
     legal issue: 
@@ -272,23 +267,45 @@ data:
       - No
       - Yes
       - Do not wish to say
----
-# Table with gender specific services list
-variable name: CLCSAservicesGender
-use objects: True
-data:
   - Name: "Women's Legal Services"
+    location:
+     - North
+     - South
+     - East
+     - West
+     - Central
     Phone: (08) 8340 9009
     Address: 45 Grenfell Street, Adelaide SA 5000
+    legal issue: 
+     - Other
+    gender:
+     - Female
+     - Other
+    indigenous:
+     - Yes
+     - No
+     - Do not wish to say
   - Name: Inspiring Determination Independence Growth and Opportunities (INDIGO)
-    Phone: (08) 8340 9009
+    location:
+     - South
+    Phone: 1300 655 037
     Address: Not Available
----
-# Table with indigenous specific services list
-variable name: CLCSAservicesIndigenous
-use objects: True
-data:
+    legal issue:
+     - Other
+    gender:
+     - Female
+     - Other
+    indigenous:
+     - Yes
+     - No
+     - Do not wish to say
   - Name: Family Violence Legal Service Aboriginal Corporation (SA)
+    location:
+     - North
+     - South
+     - East
+     - West
+     - Central
     Phone: 
       - Port Augusta Office, Freecall 1800 111 052 or Telephone (08) 8641 2195
       - Port Lincoln Office, Freecall 1800 309 912 or Telephone (08) 8683 1896
@@ -297,11 +314,36 @@ data:
       - 26 Jervois Street Port Augusta SA 5700 
       - 56 St Andrews Terrace Port Lincoln SA 5606 
       - 17 McKenzie Street Ceduna SA 5700,
+     legal issue:
+      - Other
+     gender:
+      - Female
+      - Male
+      - Other
+     indigenous:
+      - Yes
+      - Do not wish to say
   - Name:  Consumer Credit Law Centre South Australia
+    location:
+     - North
+     - South
+     - East
+     - West
+     - Central
     Phone: (08) 8342 1800 or 1300 886 220 for country callers
     Address:
       - Adelaide Office, 10 Pitt Street, Adelaide SA 5000
       - Medindie Gardens, Unit 2 59 Main North Road, Medindie Gardens SA 5081
       - Smithfield, Unit 2, 2B Morialta Drive, Smithfield SA 5114
       - Christies Beach, Unit 3, 107 Dyson Road, Christies Beach SA 5165
+     legal issue:
+      - Financial
+      gender:
+       - Female
+       - Male
+       - Other
+      indigenous:
+      - Yes
+      - No
+      - Do not wish to say
 ---
