@@ -56,4 +56,8 @@ rows: CLCSAdisplay_data
 columns:
   - Name of Service: |
       row_item['name']
+  - Address: |
+      row_item['address']
+  - Phone: |
+      row_item['phone']
 ---

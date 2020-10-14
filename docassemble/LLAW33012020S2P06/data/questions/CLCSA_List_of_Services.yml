@@ -12,7 +12,7 @@ data:
     location:
       - North
     phone: 
-      - 8286 6911
+      - (08) 8286 6911
     address:
       - 26 John Street Salisbury SA
     legal issue:
@@ -30,7 +30,7 @@ data:
       - North
       - Outback
     phone:
-      - 08 8346 9009
+      - (08) 8346 9009
     address: 
       - 212 Port Road Hindmarsh SA 5007
     legal issue:
@@ -48,7 +48,7 @@ data:
       - North
       - Outback
     phone: 
-      - 08 8633 3600
+      - (08) 8633 3600
     address:
       - Flinders Arcade 72 Ellen Street Port Pirie SA 5540
     legal issue:
@@ -74,7 +74,7 @@ data:
     location: 
       - South
     phone: 
-      - 08 8384 5222
+      - (08) 8384 5222
     address: 
       - 40 Beach Road Chrisies Beach SA 5165
     legal issue:
@@ -91,7 +91,7 @@ data:
     location: 
       - South
     phone: 
-      - 08 8723 1396
+      - (08) 8723 1396
     address:
       - 8a Commercial Street West Mount Gambier SA 5290
     legal issue:
@@ -104,7 +104,7 @@ data:
     location: 
       - Riverland
     phone: 
-      - 08 8582 4998 
+      - (08) 8582 4998 
     address: 
       - 9 Kay Avenue Berri SA 5343
     legal issue:
@@ -121,7 +121,7 @@ data:
     location: 
       - Central
     phone:
-      - 08 8362 1199
+      - (08) 8362 1199
     address:
       - 110 The Parade Norwood, SA 5067
     legal issue:
@@ -159,7 +159,7 @@ data:
     location:
       - Central
     phone: 
-      - 8232 2282 (Catherine House) outreach times by appointment
+      - (08) 8232 2282 (Catherine House) outreach times by appointment
     address: 
       - Hutt Street Centre, 258 Hutt Street, Adelaide SA 5000 (Outreach times: 10am-12pm Monday)
     legal issue:
@@ -200,7 +200,7 @@ data:
       - West
       - Central
     phone: 
-      - 8342 1800
+      - (08) 8342 1800
     address: TBA
     legal issue: 
       - Mediation
@@ -219,7 +219,7 @@ data:
       - West
       - Central
     phone:
-      - 08 8313 5005
+      - (08) 8313 5005
     address:
       - TBA
     legal issue: 
@@ -242,7 +242,7 @@ data:
       - West
       - Central
     phone: 
-      - 8342 1800
+      - (08) 8342 1800
     address:
       - 43 Franklin Street, Adelaide SA 5000
     legal issue:
@@ -259,7 +259,7 @@ data:
     location:
       - Central
     phone: 
-      - 03 8342 1800
+      - (03) 8342 1800
     address: 
       - 43 Franklin Street, Adelaide SA 5000
     legal issue: 
