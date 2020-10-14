@@ -15,7 +15,7 @@ code: |
 # Indigenous code for display data
 code: |
   CLCSAdisplay_data = []
-  for CLCSAindigenous in CLCSA_Services:
+  for CLCSAservicesindigenous in CLCSA_Services:
     if CLCSA_Services['indigenous'] == 'Yes':
       CLCSAdisplay_list.append(CLCSA_Services)
       
