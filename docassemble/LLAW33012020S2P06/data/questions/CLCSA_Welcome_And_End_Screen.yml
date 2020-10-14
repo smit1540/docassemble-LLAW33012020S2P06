@@ -2,15 +2,24 @@
 include:
   - CLCSA_Questions.yml
   - CLCSA_List_of_Services.yml
+  - CLCSA_List_of_Services_Code.yml
+---
+objects:
+  - CLCSAlogo: DAStaticFile.using(filename='CLCSAlogo.jpg')
+---
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + CLCSAlogo.url_for() + '" style="height: 50px;">')
 ---
 # Welcome screen
 mandatory: true
 question: |
-  #### Welcome to the Community Legal Centre South Australia application. 
-  #### This application will help find a legal centre for you.
+  #### Welcome to the Community Legal Centre South Australia application. This application will help find a legal centre for you.
   
-  
-  #### Privacy Statement: something something....
+     Community Legal Centres South Australia is committed to protecting the privacy and accuracy of confidential information to the extent possible, subject to the provisions of State and Federal law. Your information will not be stored. 
+     
+     Your information will only be gathered. Information is only gathered in order to generate the most suitable Community legal centre. 
+   This application can be used to help find a Community Legal Centre and should not be used as a replacement for professional legal advice.
   
 buttons:  
   - I agree: continue
@@ -19,21 +28,36 @@ buttons:
 ---
 # Final Screen
 mandatory: true
-question: |
-  Thank you for completing this application. Here are your responses,
+question: Ending Screen
+subquestion: |
+  Thank you for completing this application. Your responses are displayed below.
   
   Questions                           |Answers
   ------------------------------------|--------
-  Location                            | ${ CLCSAlocation }
-  Legal Issue                         | ${ CLCSAlegalissue.true_values() }
-  Gender                              | ${ CLCSAgender }
-  Aboriginal or Torres Strait Islander| ${ CLCSAindigenous }
+  Location                            | ${CLCSAlocation}
+  Legal Issue                         | ${CLCSAlegalissue.true_values()}
+  Gender                              | ${CLCSAgender}
+  Aboriginal or Torres Strait Islander| ${CLCSAindigenous}
   
-  Here are the list of services,
+  Here are the list of services - Please call the phone number provided to organise an appointment. 
   
-  ${ CLCSA_display_table }
-  
+  ${CLCSAdisplay_list}
+
 buttons:
-  - exit: Exit
-  - restart: Restart
+  - Exit: Exit
+  - Restart: Restart
+---
+objects:
+  - JR_names: DADict
+---  
+# Table Block
+table: CLCSAdisplay_list
+rows: CLCSAdisplay_data
+columns:
+  - Name of Service: |
+      row_item['name']
+  - Address: |
+      row_item['address']
+  - Phone: |
+      row_item['phone']
 ---
