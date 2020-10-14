@@ -4,7 +4,7 @@ include:
   - CLCSA_Questions.yml
   - CLCSA_List_of_Services_Code.yml
 ---  
-# Dictionary containing information regarding the General Services provided by CLCSA #
+# Dictionary containing information regarding the Services provided by CLCSA #
 variable name: CLCSA_Services
 use objects: True
 data:
