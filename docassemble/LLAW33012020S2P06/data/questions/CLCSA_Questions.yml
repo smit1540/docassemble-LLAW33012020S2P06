@@ -5,7 +5,7 @@ subquestion: |
   Please select the location or locations in which you are looking
   for services.
   
-  You may select more than one location
+  You may select more than one location.
   
 fields:
   - no label: CLCSAlocation
@@ -13,9 +13,12 @@ fields:
     choices:
       - North
       - Mid North
-      - South
+      - South 
+      - East
+      - Outback (Riverland)
       - West
       - Central
+
 exit url: http://www.bom.gov.au/sa/forecasts/adelaide.shtml
 exit label: |
   Exit
