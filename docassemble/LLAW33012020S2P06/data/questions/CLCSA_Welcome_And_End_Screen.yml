@@ -1,9 +1,8 @@
 ---
 include:
   - CLCSA_Questions.yml
-  - CLCSA_Gender_Code.yml
-  - CLCSA_Indigenous_Code.yml
   - CLCSA_List_of_Services.yml
+  - CLCSA_List_of_Services_Code.yml
 ---
 # Welcome screen
 mandatory: true
@@ -27,7 +26,8 @@ buttons:
 ---
 # Final Screen
 mandatory: true
-question: |
+question: Ending Screen
+subquestion: |
   Thank you for completing this application. Here are your responses,
   
   Questions                           |Answers
@@ -39,23 +39,19 @@ question: |
   
   Here are the list of services,
   
-  %if CLCSAgender:
-    ${CLCSA3column_header}
-    ${CLCSA3dashes}
-    %for CLCSA3item in CLCSA3table_rows:
-    ${CLCSA3item}
-    %endfor
-  %endif
-  
-  %if CLCSAindigenous:
-    ${CLCSA4column_header}
-    ${CLCSA4dashes}
-    %for CLCSA4item in CLCSA4table_rows:
-    ${CLCSA4item}
-    %endfor
-  %endif
-    
+  ${CLCSAdisplay_list}
+
 buttons:
-  - exit: Exit
-  - restart: Restart
+  - Exit: Exit
+  - Restart: Restart
+---
+objects:
+  - JR_names: DADict
+---  
+# Table Block
+table: CLCSAdisplay_list
+rows: CLCSAdisplay_data
+columns:
+  - Name of Service: |
+      row_item['name']
 ---

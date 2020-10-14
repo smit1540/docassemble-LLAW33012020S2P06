@@ -1,0 +1,38 @@
+---
+include:
+  - CLCSA_Welcome_And_End_Screen.yml
+  - CLCSA_Questions.yml
+  - CLCSA_List_of_Services.yml
+---  
+code: |
+  for CLCSAservicesGender in CLCSA_Services:
+    if CLCSA_Services['gender'] == 'Female':
+      CLCSAdisplay_list.append(CLCSA_Services)
+  CLCSAdisplay_list.gathered = True
+---
+# Indigenous code display data
+code: |
+  CLCSAdisplay_data = []
+  for CLCSAindigenous in CLCSA_Services:
+    if CLCSA_Services['indigenous'] = 'Yes':
+      CLCSAdisplay_list.append(CLCSA_Services)
+  CLCSAdisplay_list.gathered = True
+---
+# Legal issue code for display data
+code: |
+  CLCSAdisplay_data = []
+  for CLCSAlegalissue in CLCSAlegalissue.true_values():
+    for CLCSAlegalissue in CLCSA_Services:
+      if CLCSAlegalissue is CLCSA_Services['legal issue']:
+        CLCSAdisplay_list.append(CLCSA_Services)        
+  CLCSAdisplay_list.gathered = True
+---  
+# Location code for display data
+code: |
+  CLCSAdisplay_data = []
+  for CLCSAlocation in CLCSAlocation.true_values():  
+    for CLCSAlocation in CLCSA_Services:
+      if CLCSAlocation is CLCSA_Services['location']:
+        CLCSAdisplay_list.append(CLCSA_Services)        
+  CLCSAdisplay_list.gathered = True
+---
