@@ -4,6 +4,13 @@ include:
   - CLCSA_List_of_Services.yml
   - CLCSA_List_of_Services_Code.yml
 ---
+objects:
+  - CLCSAlogo: DAStaticFile.using(filename='CLCSAlogo.jpg')
+---
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + CLCSAlogo.url_for() + '" style="height: 50px;">')
+---
 # Welcome screen
 mandatory: true
 question: |
