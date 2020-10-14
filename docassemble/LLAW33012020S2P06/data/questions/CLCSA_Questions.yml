@@ -33,9 +33,13 @@ fields:
       - Elder Abuse: Elder Abuse
       - Environmental: Environmental
       - Financial (personal debt, bankrupcy, mortgage): Financial
+        image: financial
       - Homelessness: Homelessness
+        image: homelessness
       - Migration (refugee visa applications): Migration
+        image: migration
       - Mediation (neighbourhood conflicts, disputes): Mediation
+        image: mediation
       - Other: Other
 ---
 question: What is your gender?
@@ -66,4 +70,8 @@ image sets:
     images: 
       female: female-symbol.png
       male: male-symbol.png
+      financial: financial.png
+      mediation: mediation.png
+      homelessness: homelessness.png
+      migration: migration.png
 ---
