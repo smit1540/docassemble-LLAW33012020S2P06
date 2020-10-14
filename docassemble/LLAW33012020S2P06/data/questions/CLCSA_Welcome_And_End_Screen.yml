@@ -3,6 +3,7 @@ include:
   - CLCSA_Questions.yml
   - CLCSA_List_of_Services.yml
   - CLCSA_List_of_Services_Code.yml
+  - CLCSA_CSS_Code.yml
 ---
 # Welcome screen
 mandatory: true
@@ -48,7 +49,7 @@ buttons:
   - Restart: Restart
 ---
 objects:
-  - JR_names: DADict
+  - CLCSA_Services: DADict
 ---  
 # Table Block
 table: CLCSAdisplay_list
