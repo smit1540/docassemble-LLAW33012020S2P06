@@ -1,4 +1,9 @@
 ---
+include:
+  - CLCSA_Welcome_And_End_Screen.yml
+  - CLCSA_Questions.yml
+  - CLCSA_List_of_Services_Code.yml
+---  
 # Dictionary containing information regarding the General Services provided by CLCSA #
 variable name: CLCSA_Services
 use objects: True
@@ -299,50 +304,50 @@ data:
      - Yes
      - No
      - Do not wish to say
-  - Name: Family Violence Legal Service Aboriginal Corporation (SA)
+  - name: Family Violence Legal Service Aboriginal Corporation (SA)
     location:
      - North
      - South
      - East
      - West
      - Central
-    Phone: 
+    phone: 
       - Port Augusta Office, Freecall 1800 111 052 or Telephone (08) 8641 2195
       - Port Lincoln Office, Freecall 1800 309 912 or Telephone (08) 8683 1896
       - Ceduna Office, Freecall 1800 839 059 or Telephone (08) 8625 3800 
-    Address:
+    address:
       - 26 Jervois Street Port Augusta SA 5700 
       - 56 St Andrews Terrace Port Lincoln SA 5606 
       - 17 McKenzie Street Ceduna SA 5700,
-     legal issue:
+    legal issue:
       - Other
-     gender:
+    gender:
       - Female
       - Male
       - Other
-     indigenous:
+    indigenous:
       - Yes
       - Do not wish to say
-  - Name:  Consumer Credit Law Centre South Australia
+  - name:  Consumer Credit Law Centre South Australia
     location:
      - North
      - South
      - East
      - West
      - Central
-    Phone: (08) 8342 1800 or 1300 886 220 for country callers
-    Address:
+    phone: (08) 8342 1800 or 1300 886 220 for country callers
+    address:
       - Adelaide Office, 10 Pitt Street, Adelaide SA 5000
       - Medindie Gardens, Unit 2 59 Main North Road, Medindie Gardens SA 5081
       - Smithfield, Unit 2, 2B Morialta Drive, Smithfield SA 5114
       - Christies Beach, Unit 3, 107 Dyson Road, Christies Beach SA 5165
-     legal issue:
+    legal issue:
       - Financial
-      gender:
-       - Female
-       - Male
-       - Other
-      indigenous:
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
       - Yes
       - No
       - Do not wish to say

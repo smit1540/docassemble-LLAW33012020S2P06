@@ -4,13 +4,14 @@ include:
   - CLCSA_Questions.yml
   - CLCSA_List_of_Services.yml
 ---  
+# Gender code for display data
 code: |
   for CLCSAservicesGender in CLCSA_Services:
     if CLCSA_Services['gender'] == 'Female':
       CLCSAdisplay_list.append(CLCSA_Services)
   CLCSAdisplay_list.gathered = True
 ---
-# Indigenous code display data
+# Indigenous code for display data
 code: |
   CLCSAdisplay_data = []
   for CLCSAindigenous in CLCSA_Services:
