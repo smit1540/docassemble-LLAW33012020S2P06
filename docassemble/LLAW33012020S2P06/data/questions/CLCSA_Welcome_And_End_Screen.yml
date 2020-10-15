@@ -8,19 +8,14 @@ include:
 # Welcome screen
 mandatory: true
 question: |
-  #### Welcome to the Community Legal Centre South Australia application. 
-  #### This application will help find a legal centre for you.
+  ## Welcome to the Community Legal Centre South Australia application. This application will help find a legal centre for you.
   
-       ## PRIVACY STATEMENT ##
-  #### Community Legal Centres South Australia is committed to protecting the privacy 
-  #### and accuracy of confidential information to the extent possible, subject to the 
-  #### provisions of State and Federal law. 
-  #### Your information will not be stored. Your information will only be gathered. 
-  #### Information is only gathered in order to generate the most suitable Community legal centre. 
+
+  ### Privacy Statement: 
+  > Community Legal Centres South Australia is committed to protecting the privacy of your information. Your information will not be stored. Information is gathered in order to generate a list of Community legal centre that is suited for your needs. 
   
-       ## THIS APP SHOULD NOT BE USED AS PROFESSIONAL LEGAL ADVICE ##
-  ####  This application can be used to help find a Community Legal Centre and should 
-  ####  not be used as a replacement for professional legal advice.
+  ### This application should not be used as professional legal advice:
+  > This application is used to help find a suitable Community Legal Centre and should not be used as a replacement for professional legal advice.
   
 buttons:  
   - I agree: continue
@@ -49,7 +44,7 @@ subquestion: |
   %endif
   
   % if len(CLCSAdisplay_indigenous) > 0:
-  #### Services for ATSI people
+  #### Services for Aboriginal and Torrest Strait Islander people
   
   ${CLCSAdisplay_indigenous_list}
   % endif
@@ -59,6 +54,7 @@ subquestion: |
   
   ${CLCSAdisplay_leftover_list}
   % endif
+
 buttons:
   - Exit: exit
   - Restart: restart

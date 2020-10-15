@@ -269,43 +269,43 @@ data:
       - Do not wish to say
   - Name: "Women's Legal Services"
     location:
-     - North
-     - South
-     - East
-     - West
-     - Central
+      - North
+      - South
+      - East
+      - West
+      - Central
     Phone: (08) 8340 9009
     Address: 45 Grenfell Street, Adelaide SA 5000
     legal issue: 
-     - Other
+      - Other
     gender:
-     - Female
-     - Other
+      - Female
+      - Other
     indigenous:
-     - Yes
-     - No
-     - Do not wish to say
+      - Yes
+      - No
+      - Do not wish to say
   - Name: Inspiring Determination Independence Growth and Opportunities (INDIGO)
     location:
-     - South
+      - South
     Phone: 1300 655 037
     Address: Not Available
     legal issue:
-     - Other
+      - Other
     gender:
-     - Female
-     - Other
+      - Female
+      - Other
     indigenous:
-     - Yes
-     - No
-     - Do not wish to say
+      - Yes
+      - No
+      - Do not wish to say
   - name: Family Violence Legal Service Aboriginal Corporation (SA)
     location:
-     - North
-     - South
-     - East
-     - West
-     - Central
+      - North
+      - South
+      - East
+      - West
+      - Central
     phone: 
       - Port Augusta Office, Freecall 1800 111 052 or Telephone (08) 8641 2195
       - Port Lincoln Office, Freecall 1800 309 912 or Telephone (08) 8683 1896
@@ -313,7 +313,7 @@ data:
     address:
       - 26 Jervois Street Port Augusta SA 5700 
       - 56 St Andrews Terrace Port Lincoln SA 5606 
-      - 17 McKenzie Street Ceduna SA 5700,
+      - 17 McKenzie Street Ceduna SA 5700
     legal issue:
       - Other
     gender:
@@ -325,11 +325,11 @@ data:
       - Do not wish to say
   - name:  Consumer Credit Law Centre South Australia
     location:
-     - North
-     - South
-     - East
-     - West
-     - Central
+      - North
+      - South
+      - East
+      - West
+      - Central
     phone: (08) 8342 1800 or 1300 886 220 for country callers
     address:
       - Adelaide Office, 10 Pitt Street, Adelaide SA 5000
