@@ -9,7 +9,7 @@ data:
     phone: 
       - (08) 8286 6911
     address:
-      - 26 John Street Salisbury SA
+      - 26 John Street Salisbury SA 5108
     legal issue:
       - Other
     gender:
@@ -30,7 +30,6 @@ data:
       - 212 Port Road Hindmarsh SA 5007
     legal issue:
       - Other
-      - Domestic violence
     gender:
       - Male
       - Female
@@ -38,26 +37,6 @@ data:
     indigenous:
       - No
       - Do not wish to say
-  - name: WestSide Lawyers Port Pirie
-    location:
-      - West
-      - North
-      - Outback
-    phone: 
-      - (08) 8633 3600
-    address:
-      - Flinders Arcade 72 Ellen Street Port Pirie SA 5540
-    legal issue:
-      - Other
-    gender:
-      - Female
-    indigenous:
-      - Yes
-      - No
-      - Do not wish to say
----
-variable name: dddd
-data:
   - name: WestSide Lawyers Port Pirie
     location:
       - West
