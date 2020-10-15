@@ -22,7 +22,7 @@ code: |
         for CLCSAselected_issue in CLCSAlegalissue.true_values():
           if CLCSAselected_issue in CLCSAitem['legal issue']:
             # Specialist service gets added regardless of location
-            if CLCSAselected_issue == 'Domestic violence' or CLCSAselected_issue == 'another one':
+            if CLCSAselected_issue == 'Centrelink' or CLCSAselected_issue == 'Domestic Violence' or CLCSAselected_issue == 'Elder Abuse' or CLCSAselected_issue == 'Environmental' or CLCSAselected_issue == 'Financial' or CLCSAselected_issue == 'Homelessness' or CLCSAselected_issue == 'Migration' or CLCSAselected_issue == 'Mediation':
               if CLCSAadded == False:
                 CLCSAdisplay_data.append(CLCSAitem)
                 CLCSAadded = True
