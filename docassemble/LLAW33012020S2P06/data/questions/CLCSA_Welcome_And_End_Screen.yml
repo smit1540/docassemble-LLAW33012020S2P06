@@ -42,18 +42,50 @@ subquestion: |
   
   Here are the list of services,
   
-  ${CLCSAdisplay_list}
-
+  % if len(CLCSAdisplay_specific_gender) > 0:
+  #### Gender-specific services
+  
+  ${CLCSAdisplay_gender_list}
+  %endif
+  
+  % if len(CLCSAdisplay_indigenous) > 0:
+  #### Services for ATSI people
+  
+  ${CLCSAdisplay_indigenous_list}
+  % endif
+  
+  % if len(CLCSAdisplay_leftovers) > 0:
+  #### Services
+  
+  ${CLCSAdisplay_leftover_list}
+  % endif
 buttons:
-  - Exit: Exit
-  - Restart: Restart
----
-objects:
-  - CLCSA_Services: DADict
+  - Exit: exit
+  - Restart: restart
 ---  
 # Table Block
-table: CLCSAdisplay_list
-rows: CLCSAdisplay_data
+table: CLCSAdisplay_gender_list
+rows: CLCSAdisplay_specific_gender
+columns:
+  - Name of Service: |
+      row_item['name']
+  - Address: |
+      row_item['address']
+  - Phone: |
+      row_item['phone']
+---
+table: CLCSAdisplay_indigenous_list
+rows: CLCSAdisplay_indigenous
+columns:
+  - Name of Service: |
+      row_item['name']
+  - Address: |
+      row_item['address']
+  - Phone: |
+      row_item['phone']
+---
+table: CLCSAdisplay_leftover_list
+rows: CLCSAdisplay_leftovers
 columns:
   - Name of Service: |
       row_item['name']

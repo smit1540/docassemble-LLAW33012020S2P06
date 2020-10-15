@@ -1,8 +1,3 @@
----
-include:
-  - CLCSA_Welcome_And_End_Screen.yml
-  - CLCSA_Questions.yml
-  - CLCSA_List_of_Services_Code.yml
 ---  
 # Dictionary containing information regarding the Services provided by CLCSA #
 variable name: CLCSA_Services
@@ -35,6 +30,7 @@ data:
       - 212 Port Road Hindmarsh SA 5007
     legal issue:
       - Other
+      - Domestic violence
     gender:
       - Male
       - Female
@@ -42,6 +38,26 @@ data:
     indigenous:
       - No
       - Do not wish to say
+  - name: WestSide Lawyers Port Pirie
+    location:
+      - West
+      - North
+      - Outback
+    phone: 
+      - (08) 8633 3600
+    address:
+      - Flinders Arcade 72 Ellen Street Port Pirie SA 5540
+    legal issue:
+      - Other
+    gender:
+      - Female
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+---
+variable name: dddd
+data:
   - name: WestSide Lawyers Port Pirie
     location:
       - West
