@@ -50,7 +50,7 @@ fields:
     choices:
       - "Male": Male
         image: male
-      - "Female":
+      - "Female": Female
         image: female
       - Other
 ---
