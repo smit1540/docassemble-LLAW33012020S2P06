@@ -37,8 +37,7 @@ code: |
 code: |
   CLCSAdisplay_data = []
   for CLCSAlocation in CLCSAlocation.true_values():  
-    for CLCSAlocation in CLCSA_Services:
-      if CLCSAlocation is CLCSA_Services['location']:
+      if CLCSAlocation in CLCSA_Services['location']:
         CLCSAdisplay_list.append(CLCSA_Services)
         
   CLCSAdisplay_list.gathered = True
