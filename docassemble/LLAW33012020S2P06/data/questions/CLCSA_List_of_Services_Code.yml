@@ -6,8 +6,10 @@ include:
 ---  
 # Gender code for display data
 code: |
+  CLCSAdisplay_data = []
   for CLCSAservicesGender in CLCSA_Services:
-    if CLCSA_Services['gender'] == 'Female':
+    CLCSAservicesGender == CLCSA_Services['gender']
+    if CLCSAservicesGender == 'Yes' and CLCSA_Services['gender'] == 'Female':
       CLCSAdisplay_list.append(CLCSA_Services)
       
   CLCSAdisplay_list.gathered = True

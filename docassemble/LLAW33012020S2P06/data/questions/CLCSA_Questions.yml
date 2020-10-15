@@ -29,6 +29,7 @@ fields:
     datatype: checkboxes
     choices:
       - Centrelink: Centrelink
+        image: financial
       - Domestic violence: Domestic violence
       - Elder Abuse: Elder Abuse
       - Environmental: Environmental
