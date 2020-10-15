@@ -18,10 +18,6 @@ fields:
       - Outback (Riverland)
       - West
       - Central
-
-exit url: http://www.bom.gov.au/sa/forecasts/adelaide.shtml
-exit label: |
-  Exit
 ---
 question: What type of legal issue do you have?
 fields:

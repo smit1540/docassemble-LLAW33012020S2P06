@@ -26,7 +26,7 @@ code: |
               if CLCSAadded == False:
                 CLCSAdisplay_data.append(CLCSAitem)
                 CLCSAadded = True
-            else:
+            else: 
               # Non-specialist services are added only if in the location.
               for CLCSAselected_location in CLCSAlocation.true_values():
                 if CLCSAselected_location in CLCSAitem['location']:

@@ -267,15 +267,15 @@ data:
       - No
       - Yes
       - Do not wish to say
-  - Name: "Women's Legal Services"
+  - name: "Women's Legal Services"
     location:
       - North
       - South
       - East
       - West
       - Central
-    Phone: (08) 8340 9009
-    Address: 45 Grenfell Street, Adelaide SA 5000
+    phone: (08) 8340 9009
+    address: 45 Grenfell Street, Adelaide SA 5000
     legal issue: 
       - Other
     gender:
@@ -285,11 +285,11 @@ data:
       - Yes
       - No
       - Do not wish to say
-  - Name: Inspiring Determination Independence Growth and Opportunities (INDIGO)
+  - name: Inspiring Determination Independence Growth and Opportunities (INDIGO)
     location:
       - South
-    Phone: 1300 655 037
-    Address: Not Available
+    phone: 1300 655 037
+    address: Not Available
     legal issue:
       - Other
     gender:
